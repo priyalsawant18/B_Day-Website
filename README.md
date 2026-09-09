@@ -261,13 +261,14 @@
   <header class="site-header" id="siteHeader">
     <a href="#intro" class="logo">✨</a>
     <nav class="desktop-nav">
-      <a href="#intro">01 INTRO</a>
-      <a href="#why">02 REASON</a>
-      <a href="#memories">03 MEMORIES</a>
-      <a href="#you">04 YOU</a>
-      <a href="#travel">05 </a>
-      <a href="#surprise">06 SURPRISE</a>
-      <a href="#finale">07 FINALE</a>
+      <a href="#intro">01 WELCOME</a>
+      <a href="#why">03 REASON</a>
+      <a href="#memories">04 MEMORIES</a>
+      <a href="#you">06 FOR YOU</a>
+      <a href="#travel">07 DESTINY</a>
+      <a href="#surprise">08 SURPRISE</a>
+      <a href="#unkown">09 UNKOWN</a>
+      <a href="#finale">10 ONCE AGAIN</a>
     </nav>
     <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
@@ -276,13 +277,14 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="close-menu" id="closeMenu">×</button>
-    <a href="#intro">01 INTRO</a>
-    <a href="#why">02 WHY</a>
-    <a href="#memories">03 MEMORIES</a>
-    <a href="#you">04 YOU</a>
-    <a href="#travel">05 TRAVEL</a>
-    <a href="#surprise">06 SURPRISE</a>
-    <a href="#finale">07 FINALE</a>
+    <a href="#intro">01 WELCOME</a>
+    <a href="#why">03 REASON</a>
+    <a href="#memories">04 MEMORIES</a>
+    <a href="#you">06 FOR YOU</a>
+    <a href="#travel">07 DESTINY</a>
+    <a href="#surprise">08 SURPRISE</a>
+    <a href="#unknown">09 UNKNOWN</a>
+    <a href="#finale">10 ONCE AGAIN</a>
   </div>
 
 <audio id="birthdayAudio" loop preload="auto">
@@ -290,7 +292,7 @@
 </audio>
 
 <button onclick="toggleMusic()" id="musicButton">
-  🎵 Play Music
+  🎵 Play Music for YOUR SPECIAL DAY!
 </button>
 
 <script>
@@ -312,15 +314,14 @@ function toggleMusic() {
     <!-- PAGE 1 — INTRO -->
     <section class="chapter intro" id="intro">
       <div class="intro-inner">
-        <span class="eyebrow reveal">A little something...</span>
-        <h1 class="intro-title reveal">Hey... <span>थांब जरा.</span></h1>
+        <span class="eyebrow reveal">...Made something JUST for YOU...</span></br></br>
+        <h1 class="intro-title reveal">Hey...<span>थांब जरा.</span></h1>
         <p class="intro-subtitle reveal">This isn't just another birthday wish.</p>
         <p class="marathi-line reveal">आजचा दिवस थोडा वेगळा आहे.</p>
         <button class="primary-btn reveal" id="enterStory">Enter the story <span>→</span></button>
         <div class="intro-reveal" id="introReveal">
-          <div class="reveal-line"></div>
-          <p>Because today, someone important was born.</p>
-          <strong>आणि हो... तो “someone” म्हणजे तूच. :)</strong>
+           <p>Because for me, today "someone" important was born.</p>
+          <strong>आणि हो... तो “someone” म्हणजे तूच आहेस, बरं का!:)</strong>
         </div>
       </div>
       <div class="scroll-hint"><span>scroll</span><i>↓</i></div>
