@@ -314,7 +314,7 @@ function toggleMusic() {
     <!-- PAGE 1 — INTRO -->
     <section class="chapter intro" id="intro">
       <div class="intro-inner">
-        <p <span class="eyebrow reveal"> >...Made something JUST for YOU...</span></p>
+        <span class="eyebrow reveal">...Made something JUST for YOU...</span>
         <h1 class="intro-title reveal">Hey...<span>थांब जरा.</span></h1>
         <p class="intro-subtitle reveal">This isn't just another birthday wish.</p>
         <p class="marathi-line reveal">आजचा दिवस थोडा वेगळा आहे.</p>
