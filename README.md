@@ -348,8 +348,8 @@ function toggleMusic() {
       </div>
       <div class="final-question-reveal" id="finalQuestionReveal">
         <p class="large-statement">Exactly.</p>
-        <p>आजचा दिवस important आहे, कारण calendar वरची एक date म्हणून नाही...</p>
-        <p>तर त्या दिवशी <strong>तू या जगात आलास</strong> म्हणून.</p>
+        <p>आजचा दिवस important आहे,“कारण काही तारखा फक्त calendar वर नसतात...</p>
+        <p><strong>तर त्या मनात ही कायमच्या आठवणीत राहतात..."</strong></p>
         <div class="mini-confetti-icon">✦</div>
       </div>
     </section>
