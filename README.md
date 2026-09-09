@@ -1,5 +1,5 @@
 # B_Day-Website
-<!DOCTYPE html>
+<doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -263,10 +263,10 @@
     <a href="#intro" class="logo">✨</a>
     <nav class="desktop-nav">
       <a href="#intro">01 INTRO</a>
-      <a href="#why">02 WHY</a>
+      <a href="#why">02 REASON</a>
       <a href="#memories">03 MEMORIES</a>
       <a href="#you">04 YOU</a>
-      <a href="#travel">05 TRAVEL</a>
+      <a href="#travel">05 </a>
       <a href="#surprise">06 SURPRISE</a>
       <a href="#finale">07 FINALE</a>
     </nav>
