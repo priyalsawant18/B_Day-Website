@@ -267,7 +267,7 @@
       <a href="#you">06 FOR YOU</a>
       <a href="#travel">07 DESTINY</a>
       <a href="#surprise">08 SURPRISE</a>
-      <a href="#unkown">09 UNKOWN</a>
+      <a href="#unkown">09 UNKNOWN</a>
       <a href="#finale">10 ONCE AGAIN</a>
     </nav>
     <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
