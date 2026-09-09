@@ -1,4 +1,3 @@
-# B_Day-Website
 <doctype html>
 <html lang="en">
 <head>
