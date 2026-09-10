@@ -134,29 +134,157 @@
     /* FLIP CARDS */
     .why-section { background: linear-gradient(135deg, var(--cream), var(--dusty-rose)); }
     .flip-grid { max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(2,1fr); gap: 25px; }
-    .flip-card { min-height: 300px; perspective: 1200px; cursor: pointer; }
-    .flip-inner { position: relative; width: 100%; height: 100%; min-height: 300px; transition: transform .7s cubic-bezier(.2,.8,.2,1); transform-style: preserve-3d; }
+    .flip-card { min-height: 350px; perspective: 1200px; cursor: pointer; }
+    .flip-inner { position: relative; width: 100%; height: 100%; min-height: 350px; transition: transform .7s cubic-bezier(.2,.8,.2,1); transform-style: preserve-3d; }
     .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
     .flip-front, .flip-back { position: absolute; inset: 0; backface-visibility: hidden; border-radius: var(--radius); padding: 35px; box-shadow: var(--shadow); }
     .flip-front { background: var(--burgundy); color: var(--cream); display: flex; flex-direction: column; justify-content: space-between; }
     .flip-front span { color: var(--gold); }
-    .flip-front h3 { font-family: var(--serif); font-size: 42px; line-height: .9; }
+    .flip-front h2 { font-family: var(--serif); font-size: 38px; line-height: .9; }
     .flip-front small { opacity: .6; }
     .flip-back { background: var(--cream); color: var(--charcoal); transform: rotateY(180deg); display: grid; place-items: center; text-align: center; }
-    .flip-back p { font-family: var(--serif); font-size: 28px; line-height: 1.15; }
+    .flip-back p { font-family: var(--serif); font-size: 28px; line-height: 1.10; }
     .final-card { grid-column: span 2; }
 
-    /* TIMELINE */
-    .memories-section { background: var(--charcoal); color: var(--cream); }
-    .timeline { position: relative; max-width: 900px; margin: auto; }
-    .timeline::before { content: ""; position: absolute; top: 0; bottom: 0; left: 20px; width: 1px; background: rgba(255,255,255,.18); }
-    .timeline-item { position: relative; padding-left: 70px; margin-bottom: 100px; }
-    .timeline-dot { position: absolute; left: 13px; top: 10px; width: 15px; height: 15px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 7px rgba(200,169,107,.12); }
-    .memory-label { font-size: 10px; letter-spacing: .18em; color: var(--gold); }
-    .timeline-content h3 { font-family: var(--serif); font-size: clamp(35px,5vw,60px); font-weight: 500; margin: 10px 0 30px; }
-    .timeline-photo { max-width: 600px; background: var(--brown); padding: 10px; transform: rotate(-1deg); box-shadow: 0 30px 70px rgba(0,0,0,.35); }
-    .timeline-item:nth-child(even) .timeline-photo { transform: rotate(1.5deg); }
-    .timeline-photo img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+   /* ================================
+   MEMORIES / TIMELINE
+================================ */
+
+.memories-section {
+    background: var(--charcoal);
+    color: var(--cream);
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* Timeline vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* Each memory */
+.timeline-item {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 100px;
+}
+
+/* Timeline dot */
+.timeline-dot {
+    position: absolute;
+    left: 13px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 7px rgba(200, 169, 107, 0.12);
+}
+
+/* Date / small label */
+.memory-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+/* Memory title */
+.timeline-content h3 {
+    font-family: var(--serif);
+    font-size: clamp(35px, 5vw, 60px);
+    font-weight: 500;
+    margin: 10px 0 30px;
+}
+
+/* Photo frame */
+.timeline-photo {
+    max-width: 600px;
+    background: var(--brown);
+    padding: 10px;
+    transform: rotate(-1deg);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+/* Alternate photo angle */
+.timeline-item:nth-child(even) .timeline-photo {
+    transform: rotate(1.5deg);
+}
+
+/* Actual image */
+.timeline-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Optional memory description */
+.memory-description {
+    max-width: 600px;
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Loading message */
+.timeline-loading {
+    padding-left: 70px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+}
+
+/* Empty state */
+.timeline-empty {
+    padding-left: 70px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .timeline-item {
+        padding-left: 55px;
+        margin-bottom: 70px;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-dot {
+        left: 8px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timeline-content h3 {
+        font-size: 36px;
+    }
+
+    .timeline-photo {
+        max-width: 100%;
+    }
+
+    .timeline-loading,
+    .timeline-empty {
+        padding-left: 55px;
+    }
+}
 
     /* GALLERY */
     .gallery-section { background: var(--cream); }
@@ -396,33 +524,20 @@ function toggleMusic() {
     </section>
 
     <!-- PAGE 4 — MEMORIES -->
-    <section class="chapter memories-section" id="memories">
-      <div class="section-heading reveal">
-        <span class="section-number">04</span>
-        <div>
-          <span class="eyebrow">A small trip backwards</span>
-          <h2>चल... थोडं मागे जाऊया.</h2>
+    <section class="memories-section" id="memories">
+
+    <div class="section-heading">
+        <span class="memory-label">MEMORIES</span>
+        <h2>A little collection of moments</h2>
+    </div>
+     <div class="timeline" id="timeline">
+
+        <div class="timeline-loading">
+            Loading memories...
         </div>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="memory-label">01 · THEN</span>
-            <h3>एक जुना moment...</h3>
-            <div class="timeline-photo"><img src="https://picsum.photos/600/450?random=1" alt="Old memory" loading="lazy"></div>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="memory-label">02 · RANDOM</span>
-            <h3>एक random memory...</h3>
-            <div class="timeline-photo"><img src="https://picsum.photos/600/450?random=2" alt="Random memory" loading="lazy"></div>
-          </div>
-        </article>
-      </div>
-    </section>
+
+    </div>
+ </section>
 
     <!-- PAGE 5 — GALLERY -->
     <section class="chapter gallery-section" id="gallery">
