@@ -443,16 +443,15 @@ function toggleMusic() {
     <section class="chapter intro" id="intro">
       <div class="intro-inner">
         <span class="eyebrow reveal">...Made something JUST for YOU...</span>
-        <h1 class="intro-title reveal">Hey...<span>थांब जरा.</span></h1>
-        <p class="intro-subtitle reveal">This isn't just another birthday wish.</p>
-        <p class="marathi-line reveal">आजचा दिवस थोडा वेगळा आहे.</p>
+        <h1 class="intro-title reveal">Oye...<span> जरा थांब...</span></h1>
+        <p class="intro-subtitle reveal">This isn't just another birthday wish...</p>
+        <p class="marathi-line reveal">Because आजचा दिवस थोडा वेगळा आहे...</p>
         <button class="primary-btn reveal" id="enterStory">Enter the story <span>→</span></button>
         <div class="intro-reveal" id="introReveal">
            <p>Because for me, today "someone" important was born.</p>
           <strong>आणि हो... तो “someone” म्हणजे तूच आहेस, बरं का!:)</strong>
         </div>
       </div>
-      <div class="scroll-hint"><span>scroll</span><i>↓</i></div>
     </section>
 
     <!-- PAGE 2 — QUESTION -->
@@ -461,14 +460,14 @@ function toggleMusic() {
         <span class="section-number">02</span>
         <div>
           <span class="eyebrow">Let's start easy</span>
-          <h2>एक छोटासा प्रश्न...</h2>
+          <h3>एक विचारू...</h3>
         </div>
       </div>
       <div class="question-card reveal">
         <p class="question-text">Why do you think birthdays deserve to be celebrated?</p>
         <div class="answer-buttons">
-          <button class="answer-btn" data-response="Correct. Cake is, obviously, a very serious reason. 🍰">Because cake exists 🍰</button>
-          <button class="answer-btn" data-response="Fair enough. Another year successfully completed. Respect. 😌">Because your another year survived 😌</button>
+          <button class="answer-btn" data-response="Okay, not the cake but You are the 'Main Character' of the day!" . 🍰">Because cake exists 🍰</button>
+          <button class="answer-btn" data-response="Fair enough. For getting old by 1 year, Respect. 😌">Because you survived another year.</button>
           <button class="answer-btn" data-response=" Absolutely right, now we're getting somewhere close... 👀">Because it's YOUR day?</button>
           <button class="answer-btn" data-response="Honestly, Incorrect!"> No idea...👀</button>
         </div>
@@ -486,14 +485,14 @@ function toggleMusic() {
     <section class="chapter why-section" id="why">
       <div class="section-heading centered reveal">
         <span class="section-number">03</span>
-        <span class="eyebrow">Some very unofficial reasons</span>
-        <h2>आज दिवस enjoy करण्यासाठी<br>काही reasons...</h2>
+        <span class="eyebrow">unofficial reasons <br> </span>
+        <h3>आज दिवस enjoy करण्यासाठी<br> <br>काही reasons...</h3>
       </div>
       <div class="flip-grid">
         <article class="flip-card reveal">
           <div class="flip-inner">
             <div class="flip-front"><span>01</span><h3>Another year completed.</h3><small>Tap to flip ↻</small></div>
-            <div class="flip-back"><p>एक वर्ष म्हणजे फक्त age वाढणं नाही. तो experiences, lessons आणि memories चा एक पूर्ण chapter असतो.</p></div>
+            <div class="flip-back"><p>एक वर्ष म्हणजे फक्त age वाढणं नाही...तर तो experiences, lessons आणि memories चा एक पूर्ण chapter असतो...</p></div>
           </div>
         </article>
         <article class="flip-card reveal">
