@@ -115,8 +115,7 @@
     .intro-reveal p { font-family: var(--serif); font-size: 30px; margin-bottom: 10px; }
     .intro-reveal strong { color: var(--dusty-rose); font-size: 18px; }
     .reveal-line { width: 1px; height: 60px; background: var(--gold); margin: auto auto 20px; }
-    .scroll-hint { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; opacity: .6; font-size: 10px; text-transform: uppercase; letter-spacing: .2em; }
-
+   
     /* QUESTION SECTION */
     .question-section { background: var(--cream); display: flex; flex-direction: column; justify-content: center; }
     .question-card { max-width: 900px; margin: 0 auto; padding: clamp(30px,6vw,70px); background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; }
