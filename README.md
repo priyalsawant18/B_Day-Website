@@ -62,12 +62,12 @@
     .site-header {
       position: fixed; top: 0; left: 0; width: 100%; height: 72px;
       display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; z-index: 90;
-      transition: background .4s ease, backdrop-filter .4s ease;
+      transition: background .10s ease, backdrop-filter .10s ease;
     }
     .site-header.scrolled { background: rgba(246, 238, 226, .82); backdrop-filter: blur(18px); }
     .logo { width: 38px; height: 38px; display: grid; place-items: center; color: var(--gold); text-decoration: none; border: 1px solid rgba(200, 169, 107, .5); border-radius: 50%; }
     .desktop-nav { display: flex; gap: 24px; }
-    .desktop-nav a { color: inherit; text-decoration: none; font-size: 10px; letter-spacing: .12em; font-weight: 700; opacity: .65; transition: opacity .2s ease; }
+    .desktop-nav a { color: inherit; text-decoration: none; font-size: 10px; letter-spacing: .12em; font-weight: 700; opacity: .65; transition: opacity .10s ease; }
     .desktop-nav a:hover { opacity: 1; }
     .music-btn, .menu-btn { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.15); color: inherit; }
     .menu-btn { display: none; }
@@ -327,7 +327,7 @@
     .passport.open .passport-cover { transform: rotateY(-125deg); }
     .passport-symbol { font-size: 45px; color: var(--gold); }
     .passport-cover strong { letter-spacing: .25em; }
-    .passport-cover small { opacity: .6; }
+    .passport-cover small { opacity: .10; }
     .passport-page { background: var(--cream); padding: 30px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
     .passport-stamp { position: absolute; top: 20px; right: 20px; width: 55px; height: 55px; display: grid; place-items: center; border: 1px solid var(--terracotta); border-radius: 50%; color: var(--terracotta); transform: rotate(15deg); }
     .map-pin { position: absolute; color: var(--gold); animation: pinFloat 3s ease-in-out infinite; }
@@ -339,12 +339,12 @@
     /* SURPRISE */
     .surprise-section { background: var(--cream-dark); text-align: center; display: grid; place-items: center; }
     .surprise-content h2 { font-family: var(--serif); font-size: clamp(60px,8vw,110px); line-height: .8; margin: 20px 0; }
-    .envelope-wrapper { width: 280px; height: 190px; margin: 50px auto 30px; perspective: 900px; }
+    .envelope-wrapper { width: 380px; height: 200px; margin: 50px auto 30px; perspective: 900px; }
     .envelope { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .6s; }
     .envelope-back { position: absolute; inset: 0; background: var(--burgundy); border-radius: 5px; }
     .envelope.open .envelope-flap { transform: rotateX(180deg); }
     .surprise-letter { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .8s ease, opacity .8s ease; margin-top: 20px; background: var(--white); padding: 0 30px; border-radius: 12px; box-shadow: var(--shadow); }
-    .surprise-letter.show { max-height: 400px; opacity: 1; padding: 30px; }
+    .surprise-letter.show { max-height: 500px; opacity: 1; padding: 30px; }
     .handwritten { font-family: var(--hand); font-size: 26px; color: var(--terracotta); display: block; margin-bottom: 10px; }
     .letter-sign { display: block; margin-top: 15px; font-family: var(--serif); color: var(--burgundy); font-weight: bold; }
 
@@ -634,13 +634,135 @@ function toggleMusic() {
         <h2>HAPPY<br><span>BIRTHDAY!</span></h2>
         <div class="final-message">
           <p>आजचा दिवस फक्त birthday म्हणून नाही, तर तुझ्या story चा आणखी एक chapter म्हणून celebrate कर.</p>
-          <p class="highlight">सो आज थोडं थांब... स्वतःसाठी enjoy कर.</p>
+          <p class="highlight"ो आज थोडं थांब... स्वतःसाठी enjoy कर.</p>
           <p>Happy Birthday. Keep travelling. Keep growing. Keep making memories. :) </p>
         </div>
         <div class="next-chapter"><span>Here’s to your next chapter.</span><strong>✨</strong></div>
       </div>
     </section>
   </main>
+
+<!-- 🎂 MAKE A WISH CAKE -->
+<div class="wish-cake">
+  <h2>Make a Wish ✨</h2>
+
+  <div class="cake">
+    <div class="candles">
+      <span class="candle"><i>🔥</i></span>
+      <span class="candle"><i>🔥</i></span>
+      <span class="candle"><i>🔥</i></span>
+    </div>
+
+    <div class="cake-top"></div>
+    <div class="cake-body"></div>
+  </div>
+
+  <button onclick="blowCandles()">💨 Blow the Candles</button>
+
+  <p id="wishResult"></p>
+</div>
+
+<style>
+.wish-cake {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Georgia, serif;
+}
+
+.wish-cake h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.cake {
+  position: relative;
+  width: 220px;
+  height: 180px;
+  margin: auto;
+}
+
+/* Candles */
+.candles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  z-index: 2;
+}
+
+.candle {
+  width: 15px;
+  height: 55px;
+  background: #f5a6c0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.candle i {
+  position: absolute;
+  top: -30px;
+  left: -5px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+/* Cake */
+.cake-top {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  width: 200px;
+  height: 45px;
+  background: #ffc1d6;
+  border-radius: 50%;
+}
+
+.cake-body {
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  width: 200px;
+  height: 70px;
+  background: #f49ab5;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Button */
+.wish-cake button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #ff7096;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wish-cake button:hover {
+  transform: scale(1.05);
+}
+
+#wishResult {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 18px;
+}
+</style>
+
+<script>
+function blowCandles() {
+  document.querySelectorAll(".candle i").forEach(flame => {
+    flame.style.display = "none";
+  });
+
+  document.getElementById("wishResult").textContent =
+    "✨ Wish made! May it come true! 🎉";
+}
+</script>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
