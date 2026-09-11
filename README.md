@@ -633,8 +633,8 @@ function toggleMusic() {
         <span class="eyebrow">And finally...</span>
         <h2>HAPPY<br><span>BIRTHDAY!</span></h2>
         <div class="final-message">
-          <p>आजचा दिवस फक्त birthday म्हणून नाही, तर तुझ्या story चा आणखी एक chapter म्हणून celebrate कर.</p>
-          <p class="highlight"ो आज थोडं थांब... स्वतःसाठी enjoy कर.</p>
+          <p>आजचा दिवस फक्त birthday म्हणून नाही, तर तुझ्या life चा आणखी एक chapter completed and another chapter began म्हणून celebrate कर.</p>
+          <p class="highlight"> so आज थोडं थांब... आणि स्वतःसाठी enjoy कर.</p>
           <p>Happy Birthday. Keep travelling. Keep growing. Keep making memories. :) </p>
         </div>
         <div class="next-chapter"><span>Here’s to your next chapter.</span><strong>✨</strong></div>
