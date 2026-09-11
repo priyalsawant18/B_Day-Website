@@ -468,9 +468,9 @@ function toggleMusic() {
         <p class="question-text">Why do you think birthdays deserve to be celebrated?</p>
         <div class="answer-buttons">
           <button class="answer-btn" data-response="Correct. Cake is, obviously, a very serious reason. 🍰">Because cake exists 🍰</button>
-          <button class="answer-btn" data-response="Fair enough. Another year successfully completed. Respect. 😌">Because another year survived 😌</button>
-          <button class="answer-btn" data-response="Now we're getting somewhere... 👀">Because it's YOUR day?</button>
-          <button class="answer-btn" data-response="Honestly, same. But somehow we're still celebrating. 😂">Honestly... no idea 👀</button>
+          <button class="answer-btn" data-response="Fair enough. Another year successfully completed. Respect. 😌">Because your another year survived 😌</button>
+          <button class="answer-btn" data-response=" Absolutely right, now we're getting somewhere close... 👀">Because it's YOUR day?</button>
+          <button class="answer-btn" data-response="Honestly, Incorrect!"> No idea...👀</button>
         </div>
         <div class="question-response" id="questionResponse"></div>
       </div>
@@ -487,7 +487,7 @@ function toggleMusic() {
       <div class="section-heading centered reveal">
         <span class="section-number">03</span>
         <span class="eyebrow">Some very unofficial reasons</span>
-        <h2>आज enjoy करण्यासाठी<br>काही reasons...</h2>
+        <h2>आज दिवस enjoy करण्यासाठी<br>काही reasons...</h2>
       </div>
       <div class="flip-grid">
         <article class="flip-card reveal">
